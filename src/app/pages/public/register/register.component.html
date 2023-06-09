@@ -1,0 +1,98 @@
+<div id="register-paralax"></div>
+
+<div
+  class="container col-sm-8 col-offset-2 border border-secondary rounded p-4 mt-4 mb-4"
+>
+  <h1 class="mt-4 mb-4">Cadastrar</h1>
+  <form>
+    <div class="row align-items-center mb-4">
+      <label for="cep" class="form-label">Busca por CEP:</label>
+      <div class="col-auto">
+        <input
+          type="text"
+          id="cep"
+          class="form-control"
+          maxlength="9"
+          pattern="[0-9]{8,9}$"
+          title="Somente 8 digitos numericos!"
+          placeholder="Busque endereço pelo CEP"
+        />
+      </div>
+
+      <div class="col-auto">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          disabled="true"
+        >
+          <i class="bi bi-search"></i>&nbsp;Buscar
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <form>
+    <div class="row border border-secondary rounded mb-4">
+      <div class="form-group mb-4">
+        <input
+          type="hidden"
+          class="form-control"
+          readonly="true"
+        />
+      </div>
+      <div class="form-group col-sm-12 mb-4">
+        <label for="nome" class="form-label">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          class="form-control"
+          placeholder="Entre com o seu nome"
+        />
+      </div>
+      <div class="form-group col-sm-6 mb-4">
+        <label for="email" class="form-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="Entre com o seu e-mail"
+        />
+      </div>
+
+      <div class="form-group col-sm-6 mb-4">
+        <label class="form-label" for="password">Senha:</label>
+        <div class="input-group mb-2">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Entre com a sua senha"
+            readonly="true"
+          />
+          <div class="input-group-prepend">
+            <button
+              type="button"
+              class="input-group-text"
+            >
+              <i id="iconPasswordField" class="bi bi-lock"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="d-flex">
+        <button type="reset" class="btn btn-secondary me-auto">
+          <i class="bi bi-recycle"></i>&nbsp;Limpar
+        </button>
+        <a class="btn btn-secondary"
+          ><i class="bi bi-x-lg"></i>&nbsp;Cancelar</a
+        >&nbsp;
+        <button type="submit" class="btn btn-success">
+          <i class="bi bi-check-lg"></i>&nbsp;Cadastrar
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9f1dc1af-bacc-4886-921b-0d659c9d410b"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -94,7 +97,8 @@
               "browserTarget": "todo-app:build:production"
             },
             "development": {
-              "browserTarget": "todo-app:build:development"
+              "browserTarget": "todo-app:build:development",
+              "port": 5000
             }
           },
           "defaultConfiguration": "development"
